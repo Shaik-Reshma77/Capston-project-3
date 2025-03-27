@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Application</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 My Blog Application ✨</h1>
+        <form action="/add" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="text" name="title" placeholder="Enter Blog Title" required class="title-input">
+            </div>
+            <div class="form-group">
+                <textarea name="content" placeholder="Write your blog here..." required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="file" name="image" accept="image/*">
+            </div>
+            <button type="submit">Post</button>
+        </form>
+        <h2>Blog Posts:</h2>
+        <div class="post-card">
+              <h3>The Joys of Hiking</h3>
+              <p>Hiking is a fantastic way to connect with nature and get some exercise. I recently went on a hike in the mountains, and the views were breathtaking. The fresh air and the sounds of the forest were incredibly relaxing. I highly recommend trying it out!</p>
+              <img src="./image1.jpg" alt="Hiking Image">
+             
+          </div>
+          <div class="post-card">
+              <h3>My Favorite Recipes</h3>
+              <p>I love to cook, and I've been experimenting with some new recipes lately. One of my favorites is a simple pasta dish with fresh tomatoes and basil. Another is a homemade pizza with a crispy crust. I'll be sharing the recipes soon!</p>
+              <img src="./image222.jpg" alt="Recipe Image">
+              
+          </div>
+          <div class="post-card">
+              <h3>Taking a Moment to Reflect</h3>
+              <p>In the hustle and bustle of daily life, it's easy to get caught up in the 'doing' and forget about the 'being'. I've been feeling the need to slow down and reflect lately, to really examine where I'm at and where I want to go. Self-reflection isn't always comfortable. It can involve confronting uncomfortable truths or acknowledging areas where I need to grow. But it's also incredibly valuable. By taking the time to look inward, I can gain a clearer understanding of my values, my priorities, and my goals. I've been thinking about: *What am I grateful for?* Focusing on gratitude helps me appreciate the good in my life. *What have I learned recently?* Every experience, good or bad, offers an opportunity for learning. *What can I do to improve?* There's always room for growth, and identifying areas for improvement is the first step. *How am I spending my time?* Is it aligned with my priorities? *What brings me joy?* It's essential to make time for things that nourish my soul. I've found that journaling, meditation, and spending time in nature are helpful tools for self-reflection. Even a few minutes of quiet contemplation can make a difference. I encourage you to take a moment for yourself today. Step away from the distractions and ask yourself some tough questions. You might be surprised at what you discover. What are your favorite ways to self-reflect? Share your thoughts in the comments!</p>
+              <img src="./image3.jpg" alt="Reflection Image">
+             </div>
+             <!-- Comment Section -->
+<div class="comments-section">
+    <h3>Leave a Comment:</h3>
+    <form action="#" method="POST">
+        <label for="comment-name">Name:</label>
+        <input type="text" id="comment-name" name="name" required>
+        
+        <label for="comment-message">Comment:</label>
+        <textarea id="comment-message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Post Comment</button>
+        <div id="comments-list">
+            <!-- Comments will appear here -->
+        </div>
+    </div>
+    </form>
+</div>
+<!-- Social Media Share Buttons -->
+<div class="social-share">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank">Share on Facebook</a><br>
+    <a href="https://twitter.com/intent/tweet?url=YOUR_URL" target="_blank">Share on Twitter</a><br>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL" target="_blank">Share on LinkedIn</a><br>
+</div>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+    <p>Follow us on <a href="https://twitter.com" target="_blank">Twitter</a><br>
+         <a href="https://facebook.com" target="_blank">Facebook</a><br>
+         <a href="https://instagram.com" target="_blank">Instagram</a></p>
+</footer>
+</body>
+</html>
